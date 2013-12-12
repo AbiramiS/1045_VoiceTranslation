@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35sp"
+            android:text="@string/from"
+           
+             />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35sp"
+            android:text="@string/to" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dip"
+        android:text="@string/click" />
+ 
+    <Button android:id="@+id/speakButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Me!" />
+         
+    <EditText
+        android:id="@+id/input_txt_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text to be translated." />
+    
+    <Button
+        android:id="@+id/translate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to translate" />
+    
+    <TextView
+        android:id="@+id/translated_text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:textIsSelectable="true"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/speakOutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:text="Speak Out" />
+    
+ </LinearLayout>
